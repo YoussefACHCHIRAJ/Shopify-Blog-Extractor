@@ -17,7 +17,7 @@ Before using the app, make sure you have the following:
     API Key and Admin API Access Token (password) from your Shopify Custom App
 
 ## Installation
-    Clone the Repository:
+Clone the Repository:
 
 ```bash
 git clone git@github.com:YoussefACHCHIRAJ/Shopify-Blog-Extractor.git
@@ -53,12 +53,12 @@ Then, open the .env file and add your Shopify API credentials:
 
 ## Usage
 
-    Run the script to export your Shopify blog posts:
+Run the script to export your Shopify blog posts:
 
-    ```bash
-    node index.js
-    ```
-    The exported blog posts will be saved as a shopify_blogs.csv file in the uploads folder.
+```bash
+node index.js
+```
+The exported blog posts will be saved as a shopify_blogs.csv file in the uploads folder.
 
 ## Dependencies
 
