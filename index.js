@@ -44,7 +44,7 @@ axios
       published_at: article.published_at,
       author: article.author,
       handle: article.handle,
-      image_src: article.image ? article.image.src : "",
+      image: article.image ? article.image.src : "",
     }));
 
     try {
