@@ -2,7 +2,7 @@ const { Document, Packer, Paragraph, TextRun } = require("docx");
 const fs = require("fs");
 const { Parser } = require("json2csv");
 
-const toCsvs = (articles) => {
+const exportAsCsvs = (articles) => {
     const folderName = `uploads/csvs`;
 
   if (!fs.existsSync(folderName)) {
@@ -27,7 +27,7 @@ const toCsvs = (articles) => {
   });
 };
 
-const toWord = (articles) => {
+const exportAsWord = (articles) => {
   const folderName = `uploads/words/word_${Date.now()}`;
 
   if (!fs.existsSync(folderName)) {
@@ -82,4 +82,4 @@ const toWord = (articles) => {
   });
 };
 
-module.exports = { toCsvs, toWord };
+module.exports = { exportAsCsvs, exportAsWord };

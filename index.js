@@ -1,6 +1,6 @@
 const axios = require("axios");
 const dotenv = require("dotenv");
-const { toCsvs, toWord } = require("./functions");
+const { exportAsCsvs, exportAsWord } = require("./functions");
 
 dotenv.config();
 
@@ -32,8 +32,8 @@ axios
     }));
 
     try {
-      // toCsvs(parser, formattedArticle); //** uncomment that for exporting as CSV */
-      toWord(formattedArticle);
+      // exportAsCsvs(parser, formattedArticle); //** uncomment that for exporting as CSV */
+      exportAsWord(formattedArticle);
     } catch (err) {
       console.error("Error generating CSV:", err);
     }
