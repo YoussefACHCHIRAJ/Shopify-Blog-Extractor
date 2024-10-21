@@ -30,12 +30,6 @@ cd Shopify-Blog-Extractor
 npm install
 ```
 
-## Create Uploads folder:
-
-```bash
-mkdir uploads
-```
-
 ## Configure Environment Variables: 
 Create a .env file in the root of the project and add your Shopify store credentials:
 
