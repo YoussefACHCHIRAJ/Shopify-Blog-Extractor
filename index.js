@@ -35,7 +35,7 @@ axios
       // exportAsCsvs(parser, formattedArticle); //** uncomment that for exporting as CSV */
       exportAsWord(formattedArticle);
     } catch (err) {
-      console.error("Error generating CSV:", err);
+      console.error("Error generating the files:", err);
     }
   })
   .catch((error) => {
