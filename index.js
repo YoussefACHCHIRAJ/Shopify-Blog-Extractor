@@ -32,7 +32,7 @@ axios
     }));
 
     try {
-      // toCsvs(parser, formattedArticle);
+      // toCsvs(parser, formattedArticle); //** uncomment that for exporting as CSV */
       toWord(formattedArticle);
     } catch (err) {
       console.error("Error generating CSV:", err);

@@ -35,9 +35,6 @@ const toWord = (articles) => {
   }
 
   articles.forEach((article, _index) => {
-    // Create a new Word document for each article
-    
-
     // Create paragraphs for the title and body
     const title = new Paragraph({
       children: [
