@@ -1,6 +1,7 @@
 const { Document, Packer, Paragraph, TextRun } = require("docx");
 const fs = require("fs");
 const { Parser } = require("json2csv");
+const { nameWordFile } = require("./lib/utils");
 
 const exportAsCsvs = (articles) => {
     const folderName = `uploads/csvs`;
@@ -67,7 +68,8 @@ const exportAsWord = (articles) => {
     
       Packer.toBuffer(doc)
       .then((buffer) => {
-        const savedBlogName = `${folderName}/shopify_blogs_${Date.now()}.docx`;
+        const fileName = nameWordFile(article.title);
+        const savedBlogName = `${folderName}/${fileName}`;
         fs.writeFileSync(savedBlogName, buffer);
         console.log(
           `Article "${article.title}" has been exported to ${savedBlogName}`
