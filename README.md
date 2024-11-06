@@ -4,7 +4,7 @@ BlogVault Exporter is a Node.js app that allows you to export blog posts and art
 
 ## Features
 
-    Export Shopify blog posts as CSV
+    Export Shopify blog posts as CSV and Word
     Capture essential fields such as title, content, publication date, and author
     Simple and easy-to-use interface with Node.js and Axios
 
@@ -52,7 +52,7 @@ Run the script to export your Shopify blog posts:
 ```bash
 node index.js
 ```
-The exported blog posts will be saved as a shopify_blogs.csv file in the uploads folder.
+The exported blog posts will be saved as a shopify_blogs.csv file in the uploads folder or each blog will be saved as a word file in the uploads/words folder.
 
 ## Dependencies
 
